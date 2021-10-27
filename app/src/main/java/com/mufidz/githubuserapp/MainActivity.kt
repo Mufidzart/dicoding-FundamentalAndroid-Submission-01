@@ -28,7 +28,7 @@ class MainActivity : AppCompatActivity() {
             val dataPhoto = resources.obtainTypedArray(R.array.avatar)
             val listUser = ArrayList<User>()
             for (i in dataName.indices){
-                val user = User(dataName[i], dataUsername[i], dataRepo[i] + " Repositories", dataPhoto.getResourceId(i,-1))
+                val user = User(dataName[i], "@" + dataUsername[i], dataRepo[i] + " Repositories", dataPhoto.getResourceId(i,-1))
                 listUser.add(user)
             }
             return listUser

@@ -21,8 +21,8 @@ class UserAdapter(private val listUser: ArrayList<User>) : RecyclerView.Adapter<
         holder.tvName.text = name
         holder.tvUsername.text = username
         holder.tvRepo.text = repo
+//        holder.nRate.setRating()
         holder.imgPhoto.setImageResource(photo)
-//        holder.nRate.text = rate
         holder.itemView.setOnClickListener {
             Toast.makeText(holder.itemView.context, "Kamu memilih " + listUser[holder.adapterPosition].name, Toast.LENGTH_SHORT).show()
         }
