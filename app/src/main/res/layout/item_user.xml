@@ -17,42 +17,65 @@
     android:layout_height="wrap_content"
     android:padding="5dp">
 
-    <ImageView
+    <de.hdodenhof.circleimageview.CircleImageView
       android:id="@+id/img_user"
-      android:layout_width="0dp"
-      android:layout_height="wrap_content"
+      android:layout_width="80dp"
+      android:layout_height="80dp"
+      android:layout_marginStart="10dp"
+      android:layout_marginTop="10dp"
+      android:layout_marginBottom="10dp"
+      app:civ_border_width="2dp"
+      app:civ_border_color="@color/darknd"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent"
-      tools:src="@tools:sample/avatars" />
+      tools:src="@tools:sample/avatars"/>
 
     <TextView
       android:id="@+id/tv_name"
       android:layout_width="0dp"
       android:layout_height="wrap_content"
-      android:layout_marginLeft="10dp"
-      app:layout_constraintBottom_toBottomOf="@+id/img_user"
+      android:layout_marginStart="10dp"
+      android:layout_marginEnd="8dp"
+      android:layout_toEndOf="@+id/img_user"
+      android:textStyle="bold"
+      app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toEndOf="@+id/img_user"
       app:layout_constraintTop_toTopOf="@+id/img_user"
-      tools:text="@string/default_name"/>
+      tools:text="@string/default_name" />
 
     <TextView
-      android:id="@+id/textView"
+      android:id="@+id/tv_username"
       android:layout_width="0dp"
       android:layout_height="wrap_content"
-      android:layout_marginLeft="10dp"
-      app:layout_constraintBottom_toBottomOf="@+id/img_user"
+      android:layout_marginStart="8dp"
+      android:layout_marginTop="8dp"
       app:layout_constraintStart_toEndOf="@+id/img_user"
       app:layout_constraintTop_toBottomOf="@+id/tv_name"
       tools:text="@string/default_username" />
 
-    <Button
-      android:id="@+id/btn_user"
+    <RatingBar
+      android:id="@+id/rtb_user"
+      style="?android:attr/ratingBarStyleSmall"
       android:layout_width="0dp"
       android:layout_height="wrap_content"
-      android:layout_marginLeft="10dp"
+      android:layout_marginStart="8dp"
+      android:layout_marginTop="4dp"
+      android:rating="4"
       app:layout_constraintStart_toEndOf="@+id/img_user"
-      app:layout_constraintTop_toBottomOf="@+id/textView" />
+      app:layout_constraintTop_toBottomOf="@+id/tv_username" />
+
+    <TextView
+      android:id="@+id/tv_repo"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="8dp"
+      android:layout_marginTop="4dp"
+      android:textColor="@color/darknd"
+      android:text="0 repositories"
+      android:textStyle="italic"
+      app:layout_constraintStart_toEndOf="@+id/img_user"
+      app:layout_constraintTop_toBottomOf="@+id/rtb_user" />
 
   </androidx.constraintlayout.widget.ConstraintLayout>
 

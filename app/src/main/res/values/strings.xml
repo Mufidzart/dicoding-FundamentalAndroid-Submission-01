@@ -4,6 +4,8 @@
   <string name="default_name">Nama Pengguna</string>
   <string name="default_username">username</string>
   <string-array name="username">
+    <item>mufidz</item>
+    <item>heraya</item>
     <item>jakewharton</item>
     <item>amitshekhariitbhu</item>
     <item>romainguy</item>
@@ -17,6 +19,8 @@
   </string-array>
 
   <string-array name="name">
+    <item>Mufidz</item>
+    <item>Heraya</item>
     <item>Jake Wharton</item>
     <item>Amit Shekhar</item>
     <item>Romain Guy</item>
@@ -27,11 +31,11 @@
     <item>Budi Oktaviyan</item>
     <item>Hendi Santika</item>
     <item>Sidiq Permana</item>
-    <item>Mufidz</item>
-    <item>Heraya</item>
   </string-array>
 
   <string-array name="location">
+    <item>Purwokerto</item>
+    <item>Banjarnegara</item>
     <item>Pittsburgh, PA, USA</item>
     <item>New Delhi, India</item>
     <item>California</item>
@@ -42,11 +46,11 @@
     <item>Jakarta, Indonesia</item>
     <item>Bojongsoang - Bandung Jawa Barat</item>
     <item>Jakarta Indonesia</item>
-    <item>Purwokerto</item>
-    <item>Banjarnegara</item>
   </string-array>
 
   <string-array name="company">
+    <item>Universitas Amikom Purwokerto</item>
+    <item>Universitas Amikom Purwokerto</item>
     <item>Google, Inc.</item>
     <item>MindOrksOpenSource</item>
     <item>Google</item>
@@ -57,8 +61,6 @@
     <item>KotlinID</item>
     <item>JVMDeveloperID @KotlinID @IDDevOps</item>
     <item>Nusantara Beta Studio</item>
-    <item>Universitas Amikom Purwokerto</item>
-    <item>Universitas Amikom Purwokerto</item>
   </string-array>
 
   <string-array name="rate">
@@ -72,9 +74,13 @@
     <item>5</item>
     <item>4</item>
     <item>5</item>
+    <item>5</item>
+    <item>5</item>
   </string-array>
 
   <string-array name="avatar">
+    <item>@drawable/mufidz</item>
+    <item>@drawable/heraya</item>
     <item>@drawable/user1</item>
     <item>@drawable/user2</item>
     <item>@drawable/user3</item>
@@ -85,6 +91,21 @@
     <item>@drawable/user8</item>
     <item>@drawable/user9</item>
     <item>@drawable/user10</item>
+  </string-array>
+
+  <string-array name="repository">
+    <item>12</item>
+    <item>14</item>
+    <item>1</item>
+    <item>10</item>
+    <item>8</item>
+    <item>8</item>
+    <item>78</item>
+    <item>8</item>
+    <item>9</item>
+    <item>7</item>
+    <item>15</item>
+    <item>45</item>
   </string-array>
 
 </resources>
