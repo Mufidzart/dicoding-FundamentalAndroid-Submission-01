@@ -7,15 +7,15 @@ data class User(
     var name: String?,
     var username: String?,
     var repo: String?,
-//    var rate: String?,
+    var rate: Float,
     var photo: Int
     ) : Parcelable {
     constructor(parcel: Parcel) : this(
         parcel.readString(),
         parcel.readString(),
         parcel.readString(),
-//        parcel.readString(),
-        parcel.readInt()
+        parcel.readFloat(),
+          parcel.readInt()
     ) {
     }
 
@@ -23,7 +23,7 @@ data class User(
         parcel.writeString(name)
         parcel.writeString(username)
         parcel.writeString(repo)
-//        parcel.writeString(repo)
+        parcel.writeFloat(rate)
         parcel.writeInt(photo)
     }
 
