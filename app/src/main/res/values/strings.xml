@@ -3,6 +3,7 @@
   <string name="app_name">GitHub User App</string>
   <string name="default_name">Nama Pengguna</string>
   <string name="default_username">username</string>
+  <string name="default_company">Company</string>
   <string-array name="username">
     <item>mufidz</item>
     <item>heraya</item>

@@ -3,6 +3,7 @@ package com.mufidz.githubuserapp
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.widget.ImageView
 import android.widget.RatingBar
 import android.widget.TextView
 
@@ -15,16 +16,13 @@ class DetailUser : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_detail_user)
 
+        val imgPhoto:ImageView = findViewById(R.id.img_user_detail)
         val tvNama:TextView = findViewById(R.id.tv_name_detail)
         val tvUsername:TextView = findViewById(R.id.tv_username_detail)
-        val nRate:RatingBar = findViewById(R.id.rtb_user_detail)
 
         val user = intent.getParcelableExtra<User>(EXTRA_USER) as User
-        val nama = "${user.name.toString()}"
-        val username = "${user.username.toString()}"
-        val rate = user.rate
-        tvNama.text = nama
-        tvUsername.text = username
-        nRate.setRating(rate)
+        tvNama.text = user.name
+        tvUsername.text = user.username
+        imgPhoto.setImageResource(user.photo)
     }
 }

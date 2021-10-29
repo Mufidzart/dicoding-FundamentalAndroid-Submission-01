@@ -1,57 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
   xmlns:app="http://schemas.android.com/apk/res-auto"
   xmlns:tools="http://schemas.android.com/tools"
   android:layout_width="match_parent"
   android:layout_height="match_parent"
+  android:background="@color/white"
   tools:context=".DetailUser">
 
-  <androidx.constraintlayout.widget.ConstraintLayout
+  <ImageView
+    android:id="@+id/img_background"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:background="@color/black_ori"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+  <de.hdodenhof.circleimageview.CircleImageView
+    android:id="@+id/img_user_detail"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:layout_marginTop="50dp"
+    app:civ_border_color="@color/white"
+    app:civ_border_width="2dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    tools:src="@tools:sample/avatars" />
+
+  <TextView
+    android:id="@+id/tv_name_detail"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:padding="10dp">
+    android:textAlignment="center"
+    android:textStyle="bold"
+    android:textSize="16sp"
+    android:text="@string/default_name"
+    android:textColor="@color/white"
+    app:layout_constraintTop_toBottomOf="@+id/img_user_detail" />
 
-    <de.hdodenhof.circleimageview.CircleImageView
-      android:id="@+id/img_user_detail"
-      android:layout_width="match_parent"
-      android:layout_height="120dp"
-      android:paddingTop="10dp"
-      android:paddingBottom="10dp"
-      app:civ_border_color="@color/black_ori"
-      app:civ_border_width="2dp"
-      app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toTopOf="parent"
-      tools:src="@tools:sample/avatars" />
+  <TextView
+    android:id="@+id/tv_username_detail"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintTop_toBottomOf="@+id/tv_name_detail"
+    tools:layout_editor_absoluteX="10dp"
+    android:text="@string/default_company"
+    android:textColor="@color/white"
+    android:textAlignment="center"
+    android:textStyle="italic"/>
 
-    <TextView
-      android:id="@+id/tv_name_detail"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:textAlignment="center"
-      android:textStyle="bold"
-      android:textSize="16sp"
-      android:text="@string/default_name"
-      app:layout_constraintTop_toBottomOf="@+id/img_user_detail" />
+  <ImageView
+    android:id="@+id/icon_follow"
+    android:layout_width="0dp"
+    android:layout_height="35dp"
+    android:src="@drawable/ic_baseline_add_circle_24"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toStartOf="@+id/btn_follow"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-      android:id="@+id/tv_username_detail"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      app:layout_constraintTop_toBottomOf="@+id/tv_name_detail"
-      tools:layout_editor_absoluteX="10dp"
-      android:text="@string/default_username"
-      android:textAlignment="center"
-      android:textStyle="italic"/>
+  <Button
+    android:id="@+id/btn_follow"
+    android:layout_width="0dp"
+    android:layout_height="35dp"
+    android:textAlignment="center"
+    app:layout_constraintStart_toEndOf="@+id/icon_follow"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
 
-      <RatingBar
-        android:id="@+id/rtb_user_detail"
-        style="?android:attr/ratingBarStyleSmall"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:rating="5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_username_detail" />
-
-  </androidx.constraintlayout.widget.ConstraintLayout>
-</ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
