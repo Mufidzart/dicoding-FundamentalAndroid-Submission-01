@@ -41,6 +41,7 @@
       android:layout_toEndOf="@+id/img_user"
       android:textSize="16sp"
       android:textStyle="bold"
+      android:textColor="@color/black_ori"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toEndOf="@+id/img_user"
       app:layout_constraintTop_toTopOf="@+id/img_user"
@@ -52,6 +53,7 @@
       android:layout_height="wrap_content"
       android:layout_marginStart="10dp"
       android:layout_marginTop="8dp"
+      android:textColor="@color/black_light"
       app:layout_constraintStart_toEndOf="@+id/img_user"
       app:layout_constraintTop_toBottomOf="@+id/tv_name"
       tools:text="@string/default_username" />
