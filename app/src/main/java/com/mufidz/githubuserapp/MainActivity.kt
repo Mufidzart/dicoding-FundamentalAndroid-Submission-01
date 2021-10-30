@@ -28,15 +28,21 @@ class MainActivity : AppCompatActivity() {
     private val listUser: ArrayList<User>
         get() {
             val dataName = resources.getStringArray(R.array.name)
-            val dataUsername = resources.getStringArray(R.array.username)
+            val dataCompany = resources.getStringArray(R.array.company)
+            val dataLocation = resources.getStringArray(R.array.location)
             val dataRepo = resources.getStringArray(R.array.repository)
+            val dataFollower = resources.getStringArray(R.array.followers)
+            val dataFollowing = resources.getStringArray(R.array.following)
             val dataPhoto = resources.obtainTypedArray(R.array.avatar)
             val listUser = ArrayList<User>()
             for (i in dataName.indices){
                 val user = User(
                     dataName[i],
-                    "@" + dataUsername[i],
-                    dataRepo[i] + " Repositories",
+                    dataCompany[i],
+                    dataLocation[i],
+                    dataRepo[i],
+                    dataFollower[i],
+                    dataFollowing[i],
                     dataPhoto.getResourceId(i,-1))
                 listUser.add(user)
             }

@@ -10,8 +10,10 @@
   <ImageView
     android:id="@+id/img_background"
     android:layout_width="match_parent"
-    android:layout_height="250dp"
+    android:layout_height="350dp"
     android:background="@color/black_ori"
+    android:src="@drawable/bg"
+    android:layout_marginTop="-50dp"
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintTop_toTopOf="parent" />
@@ -42,7 +44,7 @@
     app:layout_constraintTop_toBottomOf="@+id/img_user_detail" />
 
   <TextView
-    android:id="@+id/tv_username_detail"
+    android:id="@+id/tv_company_detail"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     app:layout_constraintTop_toBottomOf="@+id/tv_name_detail"
@@ -52,24 +54,23 @@
     android:textAlignment="center"
     android:textStyle="italic"/>
 
-  <ImageView
-    android:id="@+id/icon_follow"
-    android:layout_width="0dp"
-    android:layout_height="35dp"
-    android:src="@drawable/ic_baseline_add_circle_24"
-    app:layout_constraintBottom_toBottomOf="parent"
-    app:layout_constraintEnd_toStartOf="@+id/btn_follow"
-    app:layout_constraintLeft_toLeftOf="parent"
-    app:layout_constraintTop_toTopOf="parent" />
-
-  <Button
-    android:id="@+id/btn_follow"
-    android:layout_width="0dp"
-    android:layout_height="35dp"
-    android:textAlignment="center"
-    app:layout_constraintStart_toEndOf="@+id/icon_follow"
-    app:layout_constraintBottom_toBottomOf="parent"
-    app:layout_constraintRight_toRightOf="parent"
-    app:layout_constraintTop_toTopOf="parent" />
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="25dp"
+    android:gravity="center"
+    app:layout_constraintTop_toBottomOf="@+id/tv_company_detail">
+    <ImageView
+      android:layout_width="wrap_content"
+      android:layout_height="16dp"
+      android:src="@drawable/ic_baseline_location_on_24"/>
+    <TextView
+      android:id="@+id/tv_location"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="location"
+      android:textColor="@color/white"
+      android:textSize="14sp"
+      tools:layout_editor_absoluteX="10dp" />
+  </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

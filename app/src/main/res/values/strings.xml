@@ -4,6 +4,7 @@
   <string name="default_name">Nama Pengguna</string>
   <string name="default_username">username</string>
   <string name="default_company">Company</string>
+
   <string-array name="username">
     <item>mufidz</item>
     <item>heraya</item>
@@ -64,21 +65,6 @@
     <item>Nusantara Beta Studio</item>
   </string-array>
 
-  <string-array name="rate">
-    <item>4</item>
-    <item>5</item>
-    <item>5</item>
-    <item>4</item>
-    <item>5</item>
-    <item>4</item>
-    <item>5</item>
-    <item>5</item>
-    <item>4</item>
-    <item>5</item>
-    <item>5</item>
-    <item>5</item>
-  </string-array>
-
   <string-array name="avatar">
     <item>@drawable/mufidz</item>
     <item>@drawable/heraya</item>
@@ -107,6 +93,36 @@
     <item>7</item>
     <item>15</item>
     <item>45</item>
+  </string-array>
+
+  <string-array name="followers">
+    <item>753</item>
+    <item>5000</item>
+    <item>56995</item>
+    <item>5153</item>
+    <item>7972</item>
+    <item>14725</item>
+    <item>788</item>
+    <item>18628</item>
+    <item>277</item>
+    <item>178</item>
+    <item>428</item>
+    <item>465</item>
+  </string-array>
+
+  <string-array name="following">
+    <item>120</item>
+    <item>12</item>
+    <item>2</item>
+    <item>2</item>
+    <item>0</item>
+    <item>1</item>
+    <item>0</item>
+    <item>3</item>
+    <item>39</item>
+    <item>23</item>
+    <item>61</item>
+    <item>10</item>
   </string-array>
 
 </resources>

@@ -20,14 +20,14 @@ class UserAdapter(private val listUser: ArrayList<User>) : RecyclerView.Adapter<
     }
 
     override fun onBindViewHolder(holder: ListViewHolder, position: Int) {
-        val (name, username, repo, photo) = listUser[position]
+        val (name, company, location, repo, follower, following, photo) = listUser[position]
         holder.tvName.text = name
-        holder.tvUsername.text = username
-        holder.tvRepo.text = repo
+        holder.tvCompany.text = company
+        holder.tvRepo.text = repo + " Repositories"
         holder.imgPhoto.setImageResource(photo)
         holder.itemView.setOnClickListener{
             val user = User(
-                name, username, repo, photo
+                name, company, location, repo, follower, following, photo
             )
             val intent = Intent(it.context, DetailUser::class.java)
             intent.putExtra(DetailUser.EXTRA_USER, user)
@@ -41,7 +41,7 @@ class UserAdapter(private val listUser: ArrayList<User>) : RecyclerView.Adapter<
     class ListViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         var imgPhoto: ImageView = itemView.findViewById(R.id.img_user)
         var tvName: TextView = itemView.findViewById(R.id.tv_name)
-        var tvUsername: TextView = itemView.findViewById(R.id.tv_username)
+        var tvCompany: TextView = itemView.findViewById(R.id.tv_company)
         var tvRepo: TextView = itemView.findViewById(R.id.tv_repo)
 
     }
