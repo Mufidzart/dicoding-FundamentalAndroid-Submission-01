@@ -3,7 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/admin/AndroidStudioProjects/GitHubUserApp/app/src/main/res/layout/activity_detail_user.xml" value="0.25" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/GitHubUserApp/app/src/main/res/drawable/rounded_corners.xml" value="0.20260416666666667" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/GitHubUserApp/app/src/main/res/layout/activity_detail_user.xml" value="0.33" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/GitHubUserApp/app/src/main/res/layout/activity_main.xml" value="0.2" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/GitHubUserApp/app/src/main/res/layout/item_user.xml" value="0.18" />
       </map>
