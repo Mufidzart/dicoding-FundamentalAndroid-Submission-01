@@ -20,17 +20,17 @@ class DetailUser : AppCompatActivity() {
         val tvNama:TextView = findViewById(R.id.tv_name_detail)
         val tvCompany:TextView = findViewById(R.id.tv_company_detail)
         val tvLocation:TextView = findViewById(R.id.tv_location)
-        val tvRepository:TextView = findViewById(R.id.tv_count_repository)
-        val tvFollower:TextView = findViewById(R.id.tv_count_follower)
-        val tvFollowing:TextView = findViewById(R.id.tv_count_following)
+//        val tvRepository:TextView = findViewById(R.id.tv_count_repository)
+//        val tvFollower:TextView = findViewById(R.id.tv_count_follower)
+//        val tvFollowing:TextView = findViewById(R.id.tv_count_following)
 
         val user = intent.getParcelableExtra<User>(EXTRA_USER) as User
         tvNama.text = user.name
         tvCompany.text = user.company
         tvLocation.text = user.location
-        tvRepository.text = user.repo
-        tvFollower.text = user.follower
-        tvFollowing.text = user.following
+//        tvRepository.text = user.repo
+//        tvFollower.text = user.follower
+//        tvFollowing.text = user.following
         imgPhoto.setImageResource(user.photo)
     }
 }
